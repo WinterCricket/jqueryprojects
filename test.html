@@ -10,8 +10,14 @@
 
 	<script>
 		$(document).ready(function() {
-			$('*').addClass('selected');
+			//select all elements
+			//$('*').addClass('selected');
+
+			//select by tag name and class, and tag
+			//$('ul.child li').addClass('selected');
 			
+			//select multiple elements
+			$('h1, #content li').addClass('selected');
 		});
 	</script>
 </head>
