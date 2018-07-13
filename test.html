@@ -10,12 +10,8 @@
 
 	<script>
 		$(document).ready(function() {
-			$("p").click(function() {
-
-				var graph = $(this).text();
-				console.log(graph);
+			$('*').addClass('selected');
 			
-			});
 		});
 	</script>
 </head>
@@ -33,10 +29,18 @@
 		
 		<div id="content">
 		
-			<p>Content here...</p>
-			<p>Meaningful Content here...</p>
-			<p>Confusing Content here...</p>
-			<p>Meaningless Content here...</p>
+			<ul class="parent">
+				<li>Parent List Item</li>
+					<ul class="child">
+						<li>Child list iten</li>
+						<li>etc</li>
+						<li>etc</li>
+					</ul>
+				<li>Parent List Item</li>
+				<li>Parent List Item</li>
+				<li>Parent List Item</li>
+
+			</ul>
 
 		</div>	
 		
