@@ -10,13 +10,13 @@
 
 	<script>
 		$(document).ready(function() {
-			$("html").click(function() {
-				alert();
+			$("p").click(function() {
 
+				var graph = $(this).text();
+				console.log(graph);
+			
 			});
-		}
-
-			);
+		});
 	</script>
 </head>
 <body>
@@ -34,7 +34,10 @@
 		<div id="content">
 		
 			<p>Content here...</p>
-		
+			<p>Meaningful Content here...</p>
+			<p>Confusing Content here...</p>
+			<p>Meaningless Content here...</p>
+
 		</div>	
 		
 		<div id="footer">
