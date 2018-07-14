@@ -32,7 +32,7 @@
 				.addClass('selected')
 				.addClass('exampleClass');*/
 
-			//cheldren() ex:	
+			//children() ex:	
 			// $('ul.child')
 			// 	.children()
 			// 	.addClass('selected');
@@ -44,7 +44,16 @@
 					.addClass('selected');
 				});*/
 
-			
+			//next() and prev() methods
+			// $('li').click(function(){
+			// 	$(this)
+			// 		.prev()
+			// 		.addClass('selected');
+			// 	});
+
+			$('ul.child li')
+				.eq(0)
+				.addClass('selected');
 
 		});
 	</script>
