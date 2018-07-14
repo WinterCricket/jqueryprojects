@@ -20,7 +20,32 @@
 			//$('h1, #content li').addClass('selected');
 
 			//select with pseudo class
-			$('ul.parent li:odd').addClass('selected')
+			//$('ul.parent li:odd').addClass('selected')
+
+			//parent() example
+			/*$('li').click(function(){
+				$(this).parent().addClass('selected');
+			});*/
+
+			//example of chaining
+			/*$('ul.child')
+				.addClass('selected')
+				.addClass('exampleClass');*/
+
+			//cheldren() ex:	
+			// $('ul.child')
+			// 	.children()
+			// 	.addClass('selected');
+
+			//siblings() ex:
+			/*$('li').click(function(){
+				$(this)
+					.siblings()
+					.addClass('selected');
+				});*/
+
+			
+
 		});
 	</script>
 </head>
