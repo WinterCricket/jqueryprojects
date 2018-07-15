@@ -31,10 +31,16 @@
 
 		//focus
 
-		$('form input').focus(function() {
+		/*$('form input').focus(function() {
 				$(this).addClass('selected');
-			});
+			});*/
 
+		//submit
+
+		$('#my_form').submit(function(event) {
+			event.preventDefault();
+			alert("Submit button is working!");
+			});
 
 		});
 	</script>
