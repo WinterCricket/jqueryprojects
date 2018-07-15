@@ -10,11 +10,24 @@
 
 	<script>
 		$(document).ready(function() {
-			
-			$('p').click(function(event) {
+
+//click/preventDefault()
+/*$('p').click(function(event) {
 				event.preventDefault();
 				$(this).parent().addClass('selected');
-			});
+			});*/
+
+			//hover example
+
+		$('p').hover(
+			function() {
+				
+				$(this).parent().addClass('selected');
+			},
+			function() {
+				$(this).parent().removeClass('selected');
+			}
+			);
 		});
 	</script>
 </head>
