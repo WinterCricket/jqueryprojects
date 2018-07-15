@@ -19,7 +19,7 @@
 
 			//hover example
 
-		$('p').hover(
+		/*$('p').hover(
 			function() {
 				
 				$(this).parent().addClass('selected');
@@ -27,7 +27,15 @@
 			function() {
 				$(this).parent().removeClass('selected');
 			}
-			);
+			);*/
+
+		//focus
+
+		$('form input').focus(function() {
+				$(this).addClass('selected');
+			});
+
+
 		});
 	</script>
 </head>
