@@ -18,8 +18,10 @@
 			//alert('height: ' + $('#content div').height() );
 			//set height
 			//$('#content div').height('80px');
-			//inner height
-			alert($('#content div').outerHeight());
+			//outer height with margins
+			/*alert('outer height: ' + $('#content div').outerHeight(true));*/
+			//setting css property
+			$('#content div').css('background-color', 'salmon');
 
 		});
 	</script>
