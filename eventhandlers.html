@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery Projects</title>
+	
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+	<script src="jquery.js"></script>
+
+	<script>
+		$(document).ready(function() {
+			//toggle class
+			$('p').click(function() {
+				$(this).toggleClass('selected');
+			});
+
+		});
+	</script>
+</head>
+<body>
+
+	<div id="wrapper">
+		<h1>jQuery First Projects</h1>
+		
+		<ul id="nav">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Services</a></li>
+			<li><a href="#">Contact Us</a></li>
+		</ul>
+		
+		<div id="content">
+
+			<p><!-- <a href="../cricketBlog/index.html"> -->Click This!<!-- </a> --></p>	
+
+			<div style="
+				height: 40px;
+				width: 40px;
+				padding: 20px;
+				margin: 20px 0;
+				background: orange;
+				border: 5px solid #000;
+
+			">
+				
+			</div>
+
+			<form action="" method="post" id="my_form">
+				<input type="text" name="test">
+				<input type="submit" name="submit" value="Submit">
+			</form>
+
+		</div>	
+		
+		<div id="footer">
+			WinterCricket
+		</div>							
+	</div>
+
+</body>
+</html>
